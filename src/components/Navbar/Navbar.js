@@ -1,12 +1,14 @@
 import React from 'react';
 import './Navbar.css';  // Import the CSS for styling
+import logo from '../../assets/images/logo.png';  // Import the logo from the assets folder
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
+        {/* Use the imported logo */}
         <a href="/">
-          <img src="/assets/images/logo.png" alt="QuizMaster Logo" className="navbar-logo" />
+          <img src={logo} alt="QuizMaster Logo" className="navbar-logo" />
           <span className="logo-text">QuizMaster</span>
         </a>
       </div>

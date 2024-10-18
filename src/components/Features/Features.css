@@ -1,0 +1,83 @@
+/* Features Section */
+.features-section {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background-color: #f5f7fb;
+  }
+  
+  .features-content {
+    display: flex;
+    max-width: 1200px;
+    gap: 2rem;
+  }
+  
+  /* Left side text */
+  .features-left {
+    flex: 1;
+  }
+  
+  .features-left h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .features-left p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-create-now {
+    background-color: #4a60e2;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Right side features */
+  .features-right {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* Feature boxes */
+  .feature-box {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ddefff; /* Placeholder background */
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .feature-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .feature-details p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Scroll animation */
+  .features-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .features-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
