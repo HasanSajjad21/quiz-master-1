@@ -1,84 +1,94 @@
-/* General Section Styling */
-.how-it-works-section {
+/* How It Works Section */
+.how-it-works {
     padding: 4rem 2rem;
     background-color: #f5f7fb;
+    text-align: center;
   }
   
-  .section-title {
+  .how-it-works-title {
     font-size: 2.5rem;
-    text-align: center;
+    color: #333;
     margin-bottom: 1rem;
   }
   
-  .section-description {
-    text-align: center;
+  .how-it-works-subtitle {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    color: #555;
+    margin-bottom: 3rem;
   }
   
-  /* How It Works Boxes */
-  .how-it-works-box {
+  /* Content area */
+  .how-it-works-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Each Step */
+  .how-it-works-step {
     display: flex;
     align-items: center;
-    margin-bottom: 3rem;
-    opacity: 0; /* Hidden by default */
-    transform: translateX(100px); /* Default hidden position */
-    transition: opacity 1s ease, transform 1s ease; /* Animation transition */
+    justify-content: space-between;
+    opacity: 0; /* Initially hidden */
+    transform: translateX(100px); /* Initially offset for animation */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the step */
   }
   
-  .how-it-works-box:nth-child(even) {
-    flex-direction: row-reverse;
+  .how-it-works-step.left {
+    flex-direction: row; /* Image on the left, text on the right */
   }
   
-  /* Animations */
-  .animate-left {
-    opacity: 1;
-    transform: translateX(0); /* Slide in from left */
+  .how-it-works-step.right {
+    flex-direction: row-reverse; /* Image on the right, text on the left */
   }
   
-  .animate-right {
-    opacity: 1;
-    transform: translateX(0); /* Slide in from right */
+  .how-it-works-step.visible {
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Move to original position */
   }
   
-  .how-it-works-box img {
-    width: 300px;
-    height: auto;
-    margin-right: 2rem;
+  /* Image styling */
+  .how-it-works-img {
+    max-width: 45%; /* Adjust image size */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
   }
   
-  .how-it-works-box:nth-child(even) img {
-    margin-right: 0;
-    margin-left: 2rem;
+  /* Text styling */
+  .how-it-works-details {
+    flex: 1;
+    padding: 1rem;
   }
   
-  .box-content {
-    max-width: 600px;
-  }
-  
-  .box-content h3 {
+  .how-it-works-details h3 {
     font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    color: #333;
+    margin-bottom: 1rem;
   }
   
-  .box-content p {
+  .how-it-works-details p {
     font-size: 1.1rem;
+    color: #555;
     line-height: 1.6;
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .how-it-works-box {
-      flex-direction: column;
-      text-align: center;
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .how-it-works-step {
+      flex-direction: column; /* Stack image and text on smaller screens */
+      transform: translateY(100px); /* Move vertically for smaller screens */
     }
   
-    .how-it-works-box img {
-      margin: 0 0 1rem 0;
+    .how-it-works-step.visible {
+      transform: translateY(0); /* Move to visible position */
     }
   
-    .how-it-works-box:nth-child(even) img {
-      margin-left: 0;
+    .how-it-works-img {
+      max-width: 100%;
+      margin-bottom: 1rem;
     }
   }
   
