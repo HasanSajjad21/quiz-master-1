@@ -87,7 +87,7 @@ const Signup = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('/api/auth/signup', { email, password });
+      const response = await axios.post('/api/auth/signup', { email, password });  //register 
       console.log('Signup successful:', response.data);
 
       // Show success message
