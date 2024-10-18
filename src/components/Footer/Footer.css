@@ -1,0 +1,99 @@
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  /* About Section */
+  .footer-section.about h2 {
+    font-size: 1.8rem;
+  }
+  
+  .footer-section.about p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Links Section */
+  .footer-section.links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section.links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section.links ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer-section.links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Section */
+  .footer-section.contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section.contact p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  /* Social Media Section */
+  .footer-section.social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .social-links a:hover {
+    color: #4a60e2;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 2rem;
+    }
+  }
+  
