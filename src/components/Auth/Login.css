@@ -4,7 +4,7 @@
     margin: 100px auto;
     padding: 2rem;
     border-radius: 20px;
-    background-color: #f5f7fb;
+    background-color: #e1eafa;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
@@ -103,11 +103,11 @@
   }
   
   .login-btn:enabled {
-    background-color: #302f74;
+    background-color: #1B1F4B;
   }
   
   .login-btn:hover:enabled {
-    background-color: #5e3db7;
+    background-color: #2d3374;
   }
   
   /* Sign Up Prompt */

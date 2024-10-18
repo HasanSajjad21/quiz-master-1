@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';  // Use Link for navigation and useNavigate for redirect
 import axios from 'axios';  // To send data to the backend
 import './Login.css';  // Add your CSS for styling
-import logo from '../../assets/images/logo.png';  // Adjust the path based on your folder structure
+import logo from '../../assets/images/auth_icon.png';  // Adjust the path based on your folder structure
 const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
 
 
