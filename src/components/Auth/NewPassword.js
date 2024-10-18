@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './NewPassword.css';  // Import your CSS file for styling
 import logo from '../../assets/images/auth_icon.png';
+const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
+
 
 
 const NewPassword = () => {
@@ -77,7 +79,7 @@ const NewPassword = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('/api/auth/reset-password', { password });
+      const response = await axios.post(`${apiBaseUrl}/reset-password`, { password });
       console.log('Password reset successful:', response.data);
 
       // Show success message or redirect to home

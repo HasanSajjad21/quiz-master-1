@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './ForgotPassword.css'; // Assuming you have a CSS file for styling
+const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
+
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
@@ -21,7 +23,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     try {
       // Post the email to your API to check if it's registered
-      const response = await axios.post('/api/auth/forgot-password', { email });
+      const response = await axios.post(`${apiBaseUrl}/forgot-password`, { email });
 
       if (response.data.success) {
         // If the email is found, show success message and clear the error

@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './Signup.css';  // Import your CSS for styling
 import logo from '../../assets/images/logo.png';
+const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
+
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -87,7 +89,7 @@ const Signup = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('/api/auth/signup', { email, password });  //register 
+      const response = await axios.post(`${apiBaseUrl}/register`, { email, password });  //register 
       console.log('Signup successful:', response.data);
 
       // Show success message

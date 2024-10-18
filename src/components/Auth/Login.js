@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';  // Use Link for navigatio
 import axios from 'axios';  // To send data to the backend
 import './Login.css';  // Add your CSS for styling
 import logo from '../../assets/images/logo.png';  // Adjust the path based on your folder structure
+const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
+
 
 
 const Login = () => {
@@ -62,7 +64,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post('/api/auth/login', { email, password });
+      const response = await axios.post(`${apiBaseUrl}/login`, { email, password });
       console.log('Login successful:', response.data);
 
       // Navigate to the dashboard or another page after login

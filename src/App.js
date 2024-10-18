@@ -10,6 +10,7 @@ import Login from './components/Auth/Login';
 import Signup from './components/Auth/Signup';
 import ForgotPassword from './components/Auth/ForgotPassword';
 import NewPassword from './components/Auth/NewPassword';
+const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
 
 function App() {
   return (
