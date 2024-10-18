@@ -1,0 +1,60 @@
+/* Signup Card */
+.signup-card {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #f5f7fb;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Password strength indicator */
+  .password-strength {
+    height: 6px;
+    margin-top: 5px;
+    border-radius: 3px;
+    background-color: lightgray;
+  }
+  
+  .password-strength.weak {
+    background-color: red;
+  }
+  
+  .password-strength.medium {
+    background-color: yellow;
+  }
+  
+  .password-strength.strong {
+    background-color: green;
+  }
+  
+  .password-strength.very-strong {
+    background-color: darkgreen;
+  }
+  
+  /* Continue Button */
+  .continue-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #d6c6f2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .continue-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Other CSS for form and error messages */
+  .error {
+    color: red;
+    font-size: 0.85rem;
+  }
+  

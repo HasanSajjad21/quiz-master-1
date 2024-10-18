@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
 import heroImage from '../../assets/images/heroimg.png';  // Correct image import
+import { Link } from 'react-router-dom';  // Import Link from React Router
 
 const Hero = () => {
   const rotatingTexts = ["Create", "Play", "Learn", "Share"];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
+  // Rotating text effect
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % rotatingTexts.length);
     }, 5000);
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
-}, [rotatingTexts.length]); 
+  }, [rotatingTexts.length]);
 
+  // Counter animations
   useEffect(() => {
     const animateCounters = () => {
       const counters = document.querySelectorAll('.counter');
@@ -66,16 +69,19 @@ const Hero = () => {
         <p className="hero-loved">Loved by 50,000+ Students & Teachers.</p>
         <div className="rating">⭐⭐⭐⭐⭐</div>
 
+        {/* Updated CTA buttons using Link from React Router */}
         <div className="cta-buttons">
-          <a href="#create-quiz" className="btn-create">Create Quiz</a>
-          <a href="#video" className="btn-video">Video</a>
+          <Link to="/signup" className="btn-create">Create Quiz</Link>  {/* Link to Sign Up page */}
+          <Link to="/login" className="btn-video">Log In</Link>  {/* Link to Log In page */}
         </div>
       </div>
 
+      {/* Hero image section */}
       <div className="hero-image">
         <img src={heroImage} alt="Hero GIF" className="img-gif" />
       </div>
 
+      {/* Stats counters */}
       <div className="stats">
         <div className="stat-item">
           <span className="counter" data-target="50000">0</span>+ Users

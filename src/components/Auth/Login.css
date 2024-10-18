@@ -1,0 +1,123 @@
+/* Login Card Container */
+.login-card {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #f5f7fb;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Logo Image */
+  .logo {
+    display: block;  
+    width: 60px;
+    margin: 0 auto 1rem auto;  
+  }
+  
+  /* Main Heading */
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  /* Google Login Button */
+  .google-login-btn {
+    background-color: #2d355a;
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 100px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .google-login-btn span {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  /* Divider */
+  .divider {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #1d1b1b;
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 0.5rem 0;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #fff;
+  }
+  
+  input:focus {
+    border-color: #4a60e2;
+    outline: none;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.85rem;
+  }
+  
+  /* Forgot Password Link */
+  .forgot-password-link {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #4a60e2;
+    text-decoration: none;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #d6c6f2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .login-btn:enabled {
+    background-color: #302f74;
+  }
+  
+  .login-btn:hover:enabled {
+    background-color: #5e3db7;
+  }
+  
+  /* Sign Up Prompt */
+  .signup-prompt {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .signup-prompt a {
+    color: #4a60e2;
+    text-decoration: none;
+  }
+  
